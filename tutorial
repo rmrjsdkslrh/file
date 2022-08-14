@@ -1,0 +1,232 @@
+# 주석: 메모, 정리
+
+#기본 사칙연산: + - * /
+# %: 나머지 연산자
+# //: 몫 연산자
+#39 // 2
+
+# 출력함수 print()
+#print(39 // 2)
+#메인함수 필요 없음
+
+#자료형
+
+#정수형 - int: 3, 7, 0
+#실수형 - float: 3.1, -7.9
+#문자열 - str: "hello", '안녕'
+#bool: True, False
+
+#자료형 판별 함수 type()
+# print(type(3))
+# print(type(3.1))
+# print(type("hello"))
+# print(type(True))
+
+#주석: 드래그 ctrl + /
+
+#14: 숫자
+#"14": 문자
+
+#변수
+# 변수 이름 = 값
+
+#변수에 다른 자료형의 값을 넣어도 저장 가능(단 자료형이 바뀜)
+# ㄱ = 7
+# ㄴ = 3
+# ㄷ = ㄱ + ㄴ
+# ㄹ = ㄴ
+# print(ㄱ, ㄴ, ㄷ, ㄹ)
+
+#a = 2
+#a = a + 1(a += 1)
+
+# 값 바꾸기
+# a=3
+# b=7
+# c=a
+# a=b
+# b=c
+# print(a,c)
+
+# a=3
+# b=6
+# c=9
+# d=b
+# e=c
+# b=a
+# c=d
+# a=e
+# print(a,b,c)
+
+# a=3
+# b=6
+# c=9
+# b=d
+# b=a
+# a=c
+# c=d
+# print(a,b,c)
+
+#비교 연산자 - bool 타입
+#a = 1>3(bool형의 false 값)
+# > < >= <=
+# == !=
+#복합: and or(&& ||)
+
+#제어문: 조건문: 반복문
+
+#조건문 if else elif(else if)
+#if 조건:
+#   실행 코드
+
+#if 조건:
+#   실행 코드
+#else:
+#   실행 코드
+
+#if 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+
+#if 조건:
+#   실행 코드
+#elif 조건:
+#   실행 코드
+#else:
+#   실행 코드
+
+#조건이 맞다면 코드1,2가 모두 실행
+# if 조건:
+#     실행 코드1
+# if 조건:
+#     실행 코드2
+
+# a=7
+# if a>=3 and a!= 7:
+#     print(a*2)
+# elif a<9 or a == 4:
+#     print(a - 3)
+# else:
+#     print(a)
+
+#시험성적
+# a= 86
+# if a<=100 and a>=90:
+#     print("A")
+# elif a<=89 and a>=80:
+#     print("B")
+# elif a <= 79 and a >= 70:
+#     print("C")
+# elif a <= 69 and a >= 60:
+#     print("D")
+# else:
+#     print("F")
+
+#홀짝 찾기
+# a=0
+# if a==0:
+#     print("0")
+# elif a%2 == 0:
+#     print("짝수")
+# else:
+#     print("홀수")
+
+#반복문 - for while
+#for : 반복 횟수가 정해져 있을때
+#while: 반복 조건 또는 반복을 마치는 조건이 있을때
+
+# for 변수 in range(반복 횟수):
+#     반복 코드
+
+# for 변수 in range(시작값, 끝값):
+#     반복 코드
+
+# for 변수 in range(시작값, 끝값, 증가값):
+#     반복 코드
+
+# for i in range(10):
+#     print(i)
+
+# for i in range(3,7):
+#     print(i)
+
+# for i in range(5,20,3):
+#     print(i)
+
+#while 조건:
+#   반복코드
+
+# a = 0
+# while a < 20:
+#     print(a)
+#     a= a+1
+
+#loof,무한반복
+#while True:
+#   반복코드
+#   탈출코드
+
+
+#반복문 내부 특수 함수 break, continue
+#break: 반복문 탈출함수
+#continue: 반복문 생략함수
+
+# for i in range(20):
+#     if i ==9:
+#         break
+#     print (i)
+#
+# for i in range(20):
+#     if i ==9:
+#         continue
+#     print(i)
+
+#format
+# print("hello. name is {}. old is {}".format("python",15))
+# print("hello. name is %s. old is %d"%("python",15))
+
+#구구단
+
+# for i in range(2, 10):
+#     for j in range(1, 10):
+#         print("{} * {} = {}".format(i,j, i*j))
+
+#import(#include<stdio.h>)
+# import random
+# print(random.randrange(1,101))
+
+#시퀀스 자료형 - 리스트, 튜플, 딕셔너리, 셋(set)
+#리스트(배열) - 대괄호
+
+#리스트 생성
+# a = []
+# b = [1,3,6,7,"ㅁ"]
+
+#리스트의 값 접근
+# a= [3,6,9]
+# print(a[0],a[1],a[2])
+
+#리스트 값 추가
+# a = [8,9,10]
+# a.append(7) #리스트 값 추가 함수 append
+# print(a)
+
+#리스트 값 수정
+# a = ["y", 2, "z"]
+# a[2] = 0
+# print (a)
+
+#리스트 값 삭제
+# a=[7,6,5,4]
+# del a[1]
+# print(a)
+
+import random
+a = []
+b = [0,0,0,0,0]
+for i in range(100):
+    a.append(random.randrange(1,6))
+    b[a[i]-1] +=1
+
+print(b)
