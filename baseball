@@ -1,0 +1,40 @@
+import random
+x=[10,10,10]
+i=0
+while x[2] == 10:
+   a = random.randrange(0,10)
+   if a != x[0] and a !=x[1] and a != x[2]:
+      x[i] = a
+      i = i+1
+
+list =[str(x[0]),str(x[1]),str(x[2])]
+h=0
+count = 0
+strike = 0
+
+while strike !=3 or count != 10:
+    score = []
+    print("기회가 {}번 남았습니다.".format(10-count))
+    score.append(input().split())
+    strike = 0
+    ball =0
+
+    for j in range(3):
+        if score[0][j] in list:
+            if score[0][j] == list[j]:
+                strike+=1
+            else:
+                ball += 1
+    if strike == 3:
+        break
+    elif strike == 0 and ball == 0:
+       print("faul")
+    else:
+        print("strike: {}, ball: {}".format(strike, ball))
+    count +=1
+
+
+if count == 10:
+    print("LOSE")
+else:
+    print("WIN")
