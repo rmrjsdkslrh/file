@@ -4,6 +4,15 @@
 # %: 나머지 연산자
 # //: 몫 연산자
 #39 // 2
+#abs(): 절댓값
+#a ** b: a의 b제곱
+
+#인덱스
+
+#a = "Hello World
+#a[:3] = Hel
+#a[::3] = HlWl
+#a[::-1] = dlroW
 
 # 출력함수 print()
 #print(39 // 2)
@@ -16,11 +25,27 @@
 #문자열 - str: "hello", '안녕'
 #bool: True, False
 
+#자료형 변환
+
+#정수형 변환: int()
+#실수형 변환: float()
+#문자형 변환: str()
+
 #자료형 판별 함수 type()
 # print(type(3))
 # print(type(3.1))
 # print(type("hello"))
 # print(type(True))
+
+#문자열 연산
+
+#a = "Hello"
+#b = "World"
+#문자열 + 문자열
+#print(a +' '+ b) = Hello World  
+#문자열 * 정수
+#print((a + ' '+ b) *4)= Hello World Hello World Hello World Hello World
+#문자열 길이 변환
 
 #주석: 드래그 ctrl + /
 
@@ -185,7 +210,7 @@
 #format
 # print("hello. name is {}. old is {}".format("python",15))
 # print("hello. name is %s. old is %d"%("python",15))
-
+# print("hello. name is {python}. old is {15}")
 #구구단
 
 # for i in range(2, 10):
@@ -230,3 +255,63 @@ for i in range(100):
     b[a[i]-1] +=1
 
 print(b)
+
+# 대문자
+
+#a = "the World"
+#print(a.capitalize()) : 앞글자 대문자
+#"The World"
+
+#a = "The world"
+#a = a.replace("w","W")
+#print(a)
+#The World
+
+#print(a.upper()): 전부 대문자
+#THE WORLD
+#print(a.isupper()): 전부 대문자인지 아닌지
+#= FALSE
+#print(a.islower())
+#문자 개수
+a = "The World"
+print(a.count('o'))
+print(a.count('o',0,9))0 부터 9
+
+print(a.endswitch("rld"))
+print(a.endswitch("rld",0,9) 0부터 9
+print(a.startswitch("The"))
+
+print(a.find("World")
+
+#알파벳 판별
+print(a[0].isalpha())
+= True
+#숫자 판별
+print(a[0].isdigit())
+= False
+#알파벳, 숫자 판별
+print(a[0].isalnum())
+=True
+
+print('.'.join(a))
+T.H.E. .W.O.R.L.D
+
+a=['a','b','c','d']
+b= ''.join(a)
+abcd
+
+#리스트로 변환
+b=a.split
+['The','World']
+
+b='.......aa.aa.......'
+
+
+print(b.lstrip('.')) = aa.aa.......
+print(b.strip('.')) = aa.aa
+print(b.rstrip('.')) = .......aa.aa
+왼쪽에서 양옆으로 오른쪽에서 연속되는 것 삭제
+
+
+
+
