@@ -1,0 +1,19 @@
+a = input().split()
+# d = 0
+# s = 0
+# for i in range(len(a)):
+#     if a[i].find('x')>=0:
+#         a = a[i].replace('x','')
+#         c = int(a[i])
+#         if c == "":
+#             d = d +1
+#             continue
+#         else:
+#             d = c + d
+#             continue
+#     elif a[i].isdigit() == True:
+#         c = int(a[i])
+#         s = c + s
+#         continue
+# print("{}x + {}".format(d,s))
+print(type(a[0]))
